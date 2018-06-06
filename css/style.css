@@ -1,76 +1,110 @@
 /*Mother--------------------------------------------------------*/
+
 header, main, aside {
-  margin: 3% 4%;
+    margin: 1.5em 1em;
 }
 
 /*Mother--------------------------------------------------------*/
 
 /*Header--------------------------------------------------------*/
+
 header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-header ul{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+header ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 img {
-  width: 60%;
-  height: 50%;
+    width: 60%;
+    height: 50%;
+    max-width: 300px;
+    max-height: 250px;
 }
 
 nav {
-  line-height: 2em;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  margin-top: 5%;
-  width: 100%;
+    line-height: 2em;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: 5%;
+    width: 100%;
+}
+
+header li {
+    margin: 1em;
 }
 
 /*Header--------------------------------------------------------*/
 
 /*Main--------------------------------------------------------*/
+
 main {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-  margin-top: 8%;
+    margin-top: 2em;
 }
 
 h2, h3, p {
-  margin-bottom: 5%;
+    margin-bottom: 1.5em;
 }
-
+p {
+    line-height: 1.5em;
+}
 /*Main--------------------------------------------------------*/
 
 /*Aside--------------------------------------------------------*/
+
 aside>ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 h4 {
-  padding: 20% 0;
+    padding: 1em 0;
 }
 
 li>ul>li {
-  padding: 5% 0;
-  list-style: initial;
-  font-size: 0.8em;
-  color: blue;
+    padding: 0.9em 0;
+    list-style: initial;
+    font-size: 0.8em;
+    color: blue;
 }
 
 li>ul {
     margin-left: 30%;
 }
 
+@media screen and (min-width: 720px) {
+    li>ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+    li>ul>li {
+        width: 50%;
+    }
+}
 
+@media screen and (min-width: 1020px) {
+    body {
+        display: flex;
+    }
+    li>ul>li {
+        width: 100%;
+    }
+    img {
+        width: 300px;
+        height: 250px;
+    }
+}
 
 /*Aside--------------------------------------------------------*/
