@@ -1,0 +1,76 @@
+/*Mother--------------------------------------------------------*/
+header, main, aside {
+  margin: 3% 4%;
+}
+
+/*Mother--------------------------------------------------------*/
+
+/*Header--------------------------------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+img {
+  width: 60%;
+  height: 50%;
+}
+
+nav {
+  line-height: 2em;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-top: 5%;
+  width: 100%;
+}
+
+/*Header--------------------------------------------------------*/
+
+/*Main--------------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 8%;
+}
+
+h2, h3, p {
+  margin-bottom: 5%;
+}
+
+/*Main--------------------------------------------------------*/
+
+/*Aside--------------------------------------------------------*/
+aside>ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+h4 {
+  padding: 20% 0;
+}
+
+li>ul>li {
+  padding: 5% 0;
+  list-style: initial;
+  font-size: 0.8em;
+  color: blue;
+}
+
+li>ul {
+    margin-left: 30%;
+}
+
+
+
+/*Aside--------------------------------------------------------*/
